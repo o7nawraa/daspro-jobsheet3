@@ -19,13 +19,12 @@ public class Kafe7 {
         System.out.print("Masukkan jumlah pembelian roti: ");
         jmlRoti = input.nextInt();
         totalHarga = (jmlKopi * hargaKopi) + (jmlTeh * hargaTeh) + (jmlRoti * hargaRoti);
-        byte totalByte = (byte) totalHarga;
         nominalBayar = totalHarga - (diskon * totalHarga);
 
-        System.out.println("Keanggotaan pelanggan " + keanggotaan);
+        System.out.println("Keanggotaan pelanggan: " + keanggotaan);
         System.out.println("Item pembelian " + jmlKopi + " kopi, " + jmlTeh + " teh, " + jmlRoti + " roti");
-        System.out.println("Nominal bayar Rp " + nominalBayar);
-        System.out.println("totalByte: " + totalByte);
+        System.out.println("Nominal bayar: Rp " + nominalBayar);
+
         
     }
 }
